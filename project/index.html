@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neighborhood Map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/map.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+</head>
+<body>
+    <!--
+    <div id="search">
+        <input id="myInput" type="text" data-bind="textInput: query, valueUpdate: 'keyup'">
+        <input id="go-places" type="button" value="Go">
+    </div>   
+    -->
+    <div id="mySidenav" class="sidenav text-center">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <input id="myInput" type="text" data-bind="textInput: query, valueUpdate: 'keyup'">
+        <ul id="myUL" class="myUL text-left" data-bind="foreach: search()">
+        <a href="#"><li data-bind="text: title, click: clickHandler"></li></a>
+        </ul>
+    </div>
+   
+    <button onclick="openNav()" id="openSB">open sidebar</button>
+ 
+    <div id="map">
+	</div>
+	
+	<script src="js/lib/jquery-3.1.1.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+   	
+	<script src="js/lib/knockout-3.4.2.js"></script>
+	<script src="js/app.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9UB9VQVukPqvuEIDqpyjM9F2ZwWsIlk&v=3&callback=initMap" onError="googleError()"></script>
+
+
+</body>
+</html>
+    <!--
+    <div id="wrapper">
+
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        -->
+        <!-- /#sidebar-wrapper -->
